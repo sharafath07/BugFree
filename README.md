@@ -35,5 +35,4 @@ To run this locally:
 
 ---
 
-Let me know if you want to include screenshots or badges!
 
