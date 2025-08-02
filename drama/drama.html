@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>What's Your Inner Weirdo?</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #ffcc00;
+      text-shadow: 2px 2px 10px #ffcc00;
+    }
+
+    #result {
+      margin-top: 30px;
+      font-size: 1.5em;
+      color: #00ffff;
+      padding: 20px;
+      border: 2px dashed #00ffff;
+      border-radius: 10px;
+      background-color: #1a1a1a;
+      min-height: 100px;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 1em;
+      background-color: #ff00aa;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 10px #ff00aa, 0 0 20px #ff00aa;
+    }
+
+    button:hover {
+      background-color: #cc0088;
+      box-shadow: 0 0 15px #ff00aa, 0 0 30px #ff00aa;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💫 Discover Your Inner Weirdo 💫</h1>
+  <button onclick="showRandomTrait()">Reveal It!</button>
+
+  <div id="result"></div>
+
+  <script>
+    const traits = [
+      "🧠 CEO of Awkward Silence – Starts a conversation... and immediately regrets it.",
+      "🍕 Serial Snacker – Eats 20 times a day and still says 'I didn’t have a proper meal.'",
+      "💤 Sleep Enthusiast – Has a black belt in napping.",
+      "🎭 Dramatic Sneezes – Turns every sneeze into a Broadway performance.",
+      "📡 Walking Wi-Fi Detector – Knows the password to every nearby network.",
+      "🤖 Talks Fluent Sarcasm – Native speaker of 'Really?' and 'Wow, amazing.'",
+      "🔌 Phone Battery Risk Taker – Lives life under 5% like a rebel.",
+      "🎶 Shower Singer Extraordinaire – Performs daily concerts. Audience: shampoo bottles.",
+      "📚 Overthinker Deluxe – Worries about things that haven't even happened yet.",
+      "🐢 Procrastination Ninja – Always on time... tomorrow.",
+      "😅 Laughs at Own Jokes – Even when no one else does.",
+      "📸 Selfie Samurai – Can’t walk past a mirror without posing.",
+      "📺 Binge-Watcher Supreme – Finished 3 seasons in one night.",
+      "📦 Emotionally Attached to Boxes – Can’t throw packaging away. Might be useful someday!",
+      "🎧 Playlist Philosopher – Creates a new playlist for brushing teeth."
+    ];
+
+    function showRandomTrait() {
+      const index = Math.floor(Math.random() * traits.length);
+      document.getElementById("result").innerText = traits[index];
+    }
+  </script>
+
+</body>
+</html>
