@@ -30,8 +30,8 @@ const projects = [
     link: "hacking/hacking.html"
   },
    {
-    title: "Ask me",
-    description: "Rewards you for being lazy.",
+    title: "What's Your Inner Weirdo?",
+    description: "It display your inner weirdo.",
     link: "drama/drama.html"
   }
 ];
@@ -51,3 +51,5 @@ projects.forEach(project => {
   cardContainer.appendChild(card);
 });
 
+const width = window.innerWidth;
+console.log(width);
